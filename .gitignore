@@ -1,42 +1,67 @@
-# build output
-dist/
+# ===== 项目：personal-blog =====
 
-# generated vndb covers
-public/vndb-covers/
+# 内部规划与追踪器：不随仓库公开
+.scratch/
+docs/vision.md
+docs/research/
 
-# generated types
-.astro/
+# 待整理：涉及内部规划，暂不公开
+CONTEXT.md
+docs/adr/
+docs/agents/
+docs/design.md
+docs/ui-components.md
 
-# dependencies
+# 环境与密钥
+.env
+.env.*
+!.env.example
+
+# 本地草稿与系统文件
+content/drafts/
+*.local
+.DS_Store
+Thumbs.db
+
+# ===== Firefly 主题（上游）=====
+
+# 依赖
 node_modules/
 
-# logs
+# 构建产物
+dist/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# 生成的类型与资源
+.astro/
+public/vndb-covers/
+
+# 日志
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-.vercel
-
+# 锁文件（保留 pnpm-lock.yaml）
 package-lock.json
 bun.lockb
 yarn.lock
 
-# ide
+# 部署
+.vercel
+
+# IDE
 .idea
 *.iml
 
-# docs
+# 文档（本地克隆，不公开）
 Firefly-docs/
 
-# lite 版本
+# Firefly Lite 版本
 Firefly-Lite/
 
 cache/
